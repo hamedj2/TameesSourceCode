@@ -1,0 +1,99 @@
+.bannerContainer {
+  width: 100%;
+  display: flex;
+  position: relative;
+  z-index: 5;
+}
+.bannerImage {
+  width: 100%;
+  height: 100%;
+}
+.bannerTextContainer {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bannerTextContainer h1 {
+  font-size: 5rem;
+  color: aliceblue;
+  opacity: 100%;
+}
+.logoClass {
+  width: 100px;
+  margin: auto 0;
+}
+
+.topImage1, .topImage2, .topImage3, .topImage4{
+  width: 10%;
+  position: absolute;
+  right: 5%;
+  top: 15%;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0);
+  border-radius: 25px;
+  border-style: solid;
+  border-color: rgb(210, 109, 26);
+  border-width: 3px;
+  z-index: 4;
+}
+.topImage2{
+  right: 16.5%;
+  top: 15%;
+}
+.topImage3{
+  right: 16.5%;
+  top: 35%;
+}
+.topImage4{
+  right: 5%;
+  top:35%;
+}
+.topImage5{
+  width: 30%;
+  position: absolute;
+  right: 0.1%;
+  top: 60%;
+  filter:drop-shadow(5px 5px 30px rgb(255, 217, 181))
+}
+
+.backdrop{
+  height: 100%;
+  width: 30%;
+  background-color: rgb(255, 255, 255);
+  z-index: 0;
+  position:absolute;
+  right: 0;
+  opacity: 30%;
+  
+}
+
+@media (max-width: 800px){
+  .imageContainer, .backdrop, .topImage5{
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .bannerTextContainer h1 {
+    font-size: 3rem;
+    color: aliceblue;
+    text-align: center;
+  }
+  .logoClass {
+    width: 50px;
+    padding: 5px;
+  }
+  .bannerContainer {
+    width: 100%;
+  }
+  .bannerTextContainer {
+    top: 75px;
+    left: 55px;
+    display: flex;
+    justify-content:flex-start;
+  }
+
+}

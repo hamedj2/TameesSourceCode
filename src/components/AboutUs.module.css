@@ -1,0 +1,56 @@
+.container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container h2{
+    padding: 2rem 0rem 0rem 0rem;
+    background-color: #e08a2f93;
+    width: 400px;
+    color: aliceblue;
+    border-radius: 30px;
+}
+.text{
+    padding: 1rem;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-self: center;
+    
+}
+.mainContainer{
+    display: flex;
+    justify-content: center;
+}
+.pattern{
+    position: absolute;
+    z-index: 0;
+    right:0;
+    bottom:0;
+    opacity: 80%;
+}
+.text span{
+    font-weight: bold;
+}
+.phoneNumber{
+    text-decoration: none;
+    color: black;
+}
+.phones{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+@media (max-width: 650px) {
+    .container h2{
+        width: 300px;
+    }
+    .container{
+        min-height: 0px;
+        margin-top: 4rem;
+    }
+}

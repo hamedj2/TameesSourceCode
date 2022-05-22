@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 5px 5px;
+  flex-wrap: wrap;
+}
+.title{
+  font-size: 1rem;
+}
+
+
+@media (max-width: 650px) {
+  .details{
+    height: 300px;
+    width: 300px;
+    background-color:  #E08B2F;
+    position: absolute;
+    top:calc(30%);
+    left:calc(50% - 140px);
+  }
+
+}

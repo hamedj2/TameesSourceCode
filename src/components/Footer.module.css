@@ -1,0 +1,19 @@
+.container {
+  height: 50px;
+  background-color: rgba(158, 97, 18, 0.664);
+  text-align: center;
+  color: aliceblue;
+  position:relative;
+  width: 100%;
+  bottom:0;
+  z-index: 15;
+}
+.container p {
+  padding: 15px;
+}
+@media (max-width: 650px) {
+  .container p {
+    font-size: 12px;
+  }
+}
+

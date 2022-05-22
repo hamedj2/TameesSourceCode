@@ -1,0 +1,29 @@
+.container{
+    margin: 3rem;
+    padding: 2rem;
+    text-align: center;
+    height: 500px;
+    color: rgb(110, 100, 94);
+}
+.container h1{
+    margin: 1rem;
+}
+.container button{
+    margin: 1rem;
+    border-radius: 15px;
+    width: 100px;
+    height: 30px;
+    background: rgb(255, 135, 55);
+    color: white;
+    border-color: rgb(230, 165, 67);
+    box-shadow: 5px 5px 10px rgb(189, 189, 189);
+
+}
+.logo{
+    width: 400px;
+}
+@media (max-width: 650px) {
+    .logo{
+        width: 200px;
+    }
+  }

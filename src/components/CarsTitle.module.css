@@ -1,0 +1,12 @@
+.container {
+  color: gray;
+  text-align: center;
+  margin-top: 10px;
+}
+.lineBetween {
+  color: rgba(0, 0, 0, 0.166);
+}
+
+@media (max-width: 650px) {
+  
+}

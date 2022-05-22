@@ -1,0 +1,46 @@
+.container h1, p, ul{
+    padding: 0.5rem 2rem 0rem 3rem; 
+}
+.container{
+    padding: 4rem 1rem;
+    text-align: center;
+}
+.container ul{
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    font-weight: bold;  
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+h1{
+    opacity: 40%;
+}
+
+.line{
+    opacity: 15%;
+}
+
+.links{
+    text-decoration: none;
+    color:white;
+}
+.links:hover{
+    color:#a56520;
+}
+
+
+.container li {
+    padding: 0.3rem 1rem;
+    
+}
+
+.menus{
+    background-color: #e08a2f93;
+    border-radius: 20px;
+    height: 75px;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}

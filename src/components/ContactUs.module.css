@@ -1,0 +1,33 @@
+.container {
+  height: 300px;
+  background-color: #e08a2f74;
+  text-align: center;
+}
+.container h3 {
+  color: aliceblue;
+  padding-top: 5rem;
+}
+.container i {
+  color: white;
+  font-size: 3rem;
+  padding: 3rem;
+  cursor: pointer;
+}
+.container i:hover {
+  font-size: 4rem;
+}
+@media (max-width: 650px) {
+  .container {
+    height: 200px;
+  }
+  .container i {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  .container i:hover {
+    font-size: 3rem;
+  }
+  .container h3 {
+    padding-top: 4rem;
+  }
+}

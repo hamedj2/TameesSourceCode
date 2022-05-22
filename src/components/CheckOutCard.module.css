@@ -1,0 +1,50 @@
+.image{
+    width: 10%;
+    border-radius: 10px;
+    
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid silver;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(189, 189, 189);
+}
+.decrease, .increase, .remove{
+    height: 30px;
+    width: 50px;
+    color: #fff;
+    background-color: #e08a2fdd;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 5px;
+}
+
+
+
+@media (max-width: 650px) {
+    .name{
+        font-size: 0.5rem;
+    }
+    .image{
+        width: 15%;
+        border-radius: 5px;
+        
+    }
+    .container{
+        padding: 4px;
+    }
+    
+    .decrease, .increase, .remove{
+        height: 20px;
+        width: 20px;
+        border-radius: 5px;
+        font-size: 0.7rem;
+        margin: 2px;
+    }
+}

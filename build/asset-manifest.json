@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0e136b11.css",
+    "main.js": "/static/js/main.339283c5.js",
+    "static/media/logo-tamees.png": "/static/media/logo-tamees.e5c08108c6bcd8fc3d4c.png",
+    "static/media/Caesar Salad.jpg": "/static/media/Caesar Salad.a794d332f6374ba76a08.jpg",
+    "static/media/PremiumQuality.png": "/static/media/PremiumQuality.a3845f54d2eb42eb032b.png",
+    "static/media/French fries.jpg": "/static/media/French fries.3dc88f701f965c79a99e.jpg",
+    "static/media/Cheese Sambousa.jpg": "/static/media/Cheese Sambousa.2d9a7efba85b6c8e0bfa.jpg",
+    "static/media/Fresh Vegetable Platter.jpg": "/static/media/Fresh Vegetable Platter.eba1b22dc7b8312bc62c.jpg",
+    "static/media/banner.jpg": "/static/media/banner.eaf54a3c398a3e86448f.jpg",
+    "static/media/PageNotFound.png": "/static/media/PageNotFound.635ac77611dc91e628e4.png",
+    "static/media/pattern1.png": "/static/media/pattern1.393d4ed3be5e3e37ac9d.png",
+    "index.html": "/index.html",
+    "main.0e136b11.css.map": "/static/css/main.0e136b11.css.map",
+    "main.339283c5.js.map": "/static/js/main.339283c5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e136b11.css",
+    "static/js/main.339283c5.js"
+  ]
+}
