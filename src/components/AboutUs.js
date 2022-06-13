@@ -11,8 +11,8 @@ const AboutUs = () => {
         </div>
         <div className={styles.text}>
           <p>
-            <i className="fa-solid fa-location-dot"></i> King Abdullah Branch,
-            Jeddah, Saudi Arabia
+            <i className="fa-solid fa-location-dot"></i> <a href = "https://www.google.com/maps/place/King+Abdullah+Branch+Rd,+Jeddah+Saudi+Arabia/@21.5107397,39.1802841,17z/data=!3m1!4b1!4m5!3m4!1s0x15c3cfbb55ce6fa7:0x11ef32606fb3377b!8m2!3d21.5107397!4d39.1802841"> King Abdullah Branch,
+            Jeddah, Saudi Arabia </a>
           </p>
         </div>
         <div className={styles.title}>
