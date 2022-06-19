@@ -58,7 +58,7 @@ const MenuCard = (props) => {
               className={styles.button}
             >
               {" "}
-              Add to Card
+              Add to Cart
             </button>
           )}
           {quantityCount(state, id) === 1 && (
