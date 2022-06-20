@@ -46,7 +46,7 @@ const Signup = () => {
     try {
       await signup(data.email, data.password);
       notify("You signed up successfully", "success");
-      navigate("/signin");
+      navigate("/Signin");
     } catch {
       alert("error!");
     }
