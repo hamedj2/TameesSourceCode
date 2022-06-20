@@ -5,7 +5,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { notify } from "./toast";
 import { Link, useNavigate } from "react-router-dom";
-import { signup, useAuth } from "../firebase";
+import { logout, signup, useAuth } from "../firebase";
 
 const Signup = () => {
   let navigate = useNavigate();
@@ -46,6 +46,7 @@ const Signup = () => {
     try {
       await signup(data.email, data.password);
       notify("You signed up successfully", "success");
+      await logout();
       navigate("/Signin");
     } catch {
       alert("error!");
