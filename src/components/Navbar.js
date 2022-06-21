@@ -79,7 +79,7 @@ const Navbar = () => {
                 to={path}
                 onClick={clickHandler}
               >
-                Reserve
+                Sign In
               </Link>
             </li>
             <li>
