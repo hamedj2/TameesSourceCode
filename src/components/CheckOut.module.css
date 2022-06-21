@@ -6,7 +6,7 @@
 .container h3{
     margin-left: 20px;
 }
-.checkOutButton{
+.goBackToMenuButton{
     margin: 1rem;
     border-radius: 7px;
     border: none;
@@ -18,10 +18,20 @@
     box-shadow: 5px 5px 10px rgb(189, 189, 189);
 
 }
-
+.checkOutButton{
+    margin: 1rem;
+    border-radius: 7px;
+    border: none;
+    width: 100px;
+    height: 30px;
+    background: #E08B2F;
+    color: white;
+    border-color: rgb(230, 165, 67);
+    box-shadow: 5px 5px 10px rgb(189, 189, 189);
+}
 .info{
     width: 100%;
-    height: 100px;
+    height: 150px;
     background-color: #fff;
     margin: 10px;
     border-radius: 15px;
@@ -30,7 +40,16 @@
 
 @media (max-width: 650px) {
     .container{
-        padding: 4rem 1rem 1rem 1rem; 
+        padding: 4rem 1rem 1rem 0rem; 
+    }
+    
+    .info{
+        width: 100%;
+        height: 120px;
+        background-color: #fff;
+        border-radius: 15px;
+        text-align: center;
+    
     }
 
 }

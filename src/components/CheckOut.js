@@ -58,7 +58,7 @@ const CheckOut = () => {
                 onClick={() => {
                   navigate("/Menu/Salad");
                 }}
-                className={styles.checkOutButton}
+                className={styles.goBackToMenuButton}
               >
                 Go back to Menu
               </button>
@@ -77,10 +77,10 @@ const CheckOut = () => {
               <span>Total Payment:</span>${state.total}
             </p>
             <div>
-              <button onClick={() => dispatch({ type: "CHECKOUT" })}>
+              <button onClick={() => dispatch({ type: "CHECKOUT" })} className={styles.checkOutButton}>
                 CheckOut
               </button>
-              <button onClick={() => dispatch({ type: "CLEAR" })}>CLEAR</button>
+              <button onClick={() => dispatch({ type: "CLEAR" })} className={styles.checkOutButton}>CLEAR</button>
             </div>
           </div>
         )}
