@@ -31,14 +31,11 @@ const CheckOut = () => {
   }
   return (
     <div className={styles.container}>
-      
       <div>
-        
         <div className={styles.itemContainer}>
           {state.selectedItems.map((item) => (
             <CheckOutCard key={item.id} data={item} />
           ))}
-          
 
           {state.checkout && (
             <div>
@@ -61,36 +58,33 @@ const CheckOut = () => {
                 onClick={() => {
                   navigate("/Menu/Salad");
                 }}
+                className={styles.checkOutButton}
               >
-                {" "}
-                Go back to Menu{" "}
+                Go back to Menu
               </button>
             </div>
           )}
         </div>
       </div>
       <div className={styles.info}>
-      {state.itemsCounter > 0 && (
+        {state.itemsCounter > 0 && (
+          <div>
+            <p>
+              <span>Total Items:</span>
+              {state.itemsCounter}
+            </p>
+            <p>
+              <span>Total Payment:</span>${state.total}
+            </p>
             <div>
-              <p>
-                <span>Total Items:</span>
-                {state.itemsCounter}
-              </p>
-              <p>
-                <span>Total Payment:</span>
-                ${state.total}
-              </p>
-              <div>
-                <button onClick={() => dispatch({ type: "CHECKOUT" })}>
-                  CheckOut
-                </button>
-                <button onClick={() => dispatch({ type: "CLEAR" })}>
-                  CLEAR
-                </button>
-              </div>
+              <button onClick={() => dispatch({ type: "CHECKOUT" })}>
+                CheckOut
+              </button>
+              <button onClick={() => dispatch({ type: "CLEAR" })}>CLEAR</button>
             </div>
-          )}
-        </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 };

@@ -14,6 +14,7 @@
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgb(189, 189, 189);
 }
+
 .decrease, .increase, .remove{
     height: 30px;
     width: 50px;

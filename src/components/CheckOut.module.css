@@ -2,6 +2,20 @@
     padding: 5rem 2rem 2rem 2rem;
     display: flex;
     flex-direction: column;
+}
+.container h3{
+    margin-left: 20px;
+}
+.checkOutButton{
+    margin: 1rem;
+    border-radius: 7px;
+    border: none;
+    width: 200px;
+    height: 30px;
+    background: #E08B2F;
+    color: white;
+    border-color: rgb(230, 165, 67);
+    box-shadow: 5px 5px 10px rgb(189, 189, 189);
 
 }
 
