@@ -18,6 +18,17 @@
     box-shadow: 5px 5px 10px rgb(189, 189, 189);
 
 }
+.hide{
+    display: none;
+}
+.askSignin{
+    background-color: #e02f2f15;
+    width: 210px;
+    margin-top: 10px;
+    height: 35px;
+    border-radius: 8px;
+}
+
 .checkOutButton{
     margin: 1rem;
     border-radius: 7px;
@@ -31,11 +42,13 @@
 }
 .info{
     width: 100%;
-    height: 150px;
+    height: 180px;
     background-color: #fff;
     margin: 10px;
     border-radius: 15px;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 @media (max-width: 650px) {
@@ -45,7 +58,7 @@
     
     .info{
         width: 100%;
-        height: 120px;
+        height: 180px;
         background-color: #fff;
         border-radius: 15px;
         text-align: center;

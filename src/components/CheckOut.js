@@ -76,11 +76,33 @@ const CheckOut = () => {
             <p>
               <span>Total Payment:</span>${state.total}
             </p>
+
             <div>
-              <button onClick={() => dispatch({ type: "CHECKOUT" })} className={styles.checkOutButton}>
+              <button
+                onClick={() => dispatch({ type: "CHECKOUT" })}
+                className={currentUser ? styles.checkOutButton : styles.hide}
+              >
                 CheckOut
               </button>
-              <button onClick={() => dispatch({ type: "CLEAR" })} className={styles.checkOutButton}>CLEAR</button>
+              <button
+                onClick={() => dispatch({ type: "CLEAR" })}
+                className={currentUser ? styles.checkOutButton : styles.hide}
+              >
+                CLEAR
+              </button>
+            </div>
+            <div>
+              <p className={!currentUser ? styles.askSignin : styles.hide}>
+                Please Sign in to Check out
+              </p>
+              <button
+                onClick={() => {
+                  navigate("/Signin");
+                }}
+                className={!currentUser ? styles.checkOutButton : styles.hide}
+              >
+                Sign In
+              </button>
             </div>
           </div>
         )}
