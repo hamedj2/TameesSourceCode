@@ -6,6 +6,8 @@ import "react-toastify/dist/ReactToastify.css";
 import { notify } from "./toast";
 import { Link, useNavigate } from "react-router-dom";
 import { logout, signup, useAuth } from "../firebase";
+import Popup from "./Popup";
+
 
 const Signup = () => {
   let navigate = useNavigate();
@@ -21,7 +23,8 @@ const Signup = () => {
   });
 
   const [loading, setLoading] = useState(false);
-
+  const [buttonPopup, setButtonPopup] = useState(false);
+  
   const [errors, setErrors] = useState({});
   const [touched, setTouched] = useState({});
 
@@ -106,6 +109,7 @@ const Signup = () => {
           />
           {errors.email && touched.email && <span>{errors.email}</span>}
         </div>
+        
         <div className={styles.formField}>
           <label>Password</label>
           <input
@@ -144,7 +148,7 @@ const Signup = () => {
         </div>
         <div className={styles.formField}>
           <div className={styles.checkBoxContainer}>
-            <label>I accept terms of privacy policy</label>
+            <a href="#" onClick={() => setButtonPopup(true)}>I accept terms of privacy policy</a>
             <input
               className={styles.checkbox}
               type="checkbox"
@@ -173,6 +177,12 @@ const Signup = () => {
         </div>
       </form>
       <ToastContainer />
+      <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
+      <h1>Privacy Policy</h1>
+<p>Last updated: June 20, 2022</p>
+<p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
+<p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created with the help of the <a href="https://www.termsfeed.com/privacy-policy-generator/" target="_blank">TermsFeed Privacy Policy Generator</a>.</p>
+  </Popup>
     </div>
   );
 };
