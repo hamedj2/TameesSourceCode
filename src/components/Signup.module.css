@@ -110,6 +110,24 @@ input[type="checkbox"]:focus{
     border: 2px solid #E08B2F ;
 }
 
+.email-input {
+    width: 300px;
+    padding: 5px 10px;
+  }
+  
+  .message {
+    margin-top: 20px;
+    font-size: 17px; 
+  }
+  
+  .success {
+    color: blue;
+  }
+  
+  .error {
+    color: red;
+  }
+
 .formButtons{
     display: flex;
     justify-content: space-between;
