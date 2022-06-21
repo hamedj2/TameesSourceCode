@@ -20,11 +20,11 @@ const AboutUs = () => {
         </div>
         <div className={styles.text}>
           <div className={styles.phones}>
-            <a className={styles.phoneNumber} >
+            <a href="tel:0551340474" className={styles.phoneNumber} >
               <i className="fa-solid fa-phone"></i> 055 134 0474
             </a>
             <br />
-            <a className={styles.phoneNumber}>
+            <a href="tel:0545996006" className={styles.phoneNumber}>
               <i className="fa-solid fa-phone"></i> 054 599 6006
             </a>
           </div>
