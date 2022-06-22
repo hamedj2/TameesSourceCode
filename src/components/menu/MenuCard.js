@@ -61,13 +61,6 @@ const MenuCard = (props) => {
               Add to Cart
             </button>
           )}
-          {quantityCount(state, id) > 0 && (
-            <a
-            className="new"
-            >
-              <b>Quantity : </b>{quantityCount(state, id)}
-            </a>
-          )}
           {quantityCount(state, id) === 1 && (
             <button
               className={styles.removeButton}
