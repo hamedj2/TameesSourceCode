@@ -86,6 +86,7 @@ const MenuCard = (props) => {
       <div className={isOpen ? styles.details : styles.hidden}>
         <img src={image} alt={name} />
         <p className={isOpen ? styles.detailsText : styles.hidden}>{details}</p>
+        <p className={isOpen ? styles.detailsText : styles.hidden}>calories : 560 cal</p>
         <button className={styles.backButton} onClick={clickHandler}>
           back
         </button>
