@@ -1,0 +1,261 @@
+/* style each card */
+
+.container img {
+    width: 100%;
+    
+  }
+.container {
+    margin: 20px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgb(189, 189, 189);
+    height: 350px;
+    width: 240px;
+  }
+  
+.name {
+    color: gray;
+    margin: 10px 10px 20px;
+    font-size: 1rem;
+}
+.cost {
+    margin: 5px 10px;
+    color: rgb(111, 111, 111);
+    /* background-color: rgba(133, 94, 57, 0.516); */
+    padding: 3px;
+    width: fit-content;
+    border-radius: 5px;
+    border: 1.4px #e08a2f45 solid;
+    width: 30px;
+    height: 25px;
+    box-shadow: 3px 3px 5px rgb(189, 189, 189);
+  }
+.button {
+  position: relative;
+  bottom: 37px;
+  height: 30px;
+  border: none;
+  background-color:  #E08B2F;
+  width: 100px;
+  border-radius: 5px;
+  color:aliceblue;
+  left: 60px;
+  box-shadow: 3px 3px 5px rgb(189, 189, 189);
+  cursor: pointer;
+}  
+.addButton{
+  position: relative;
+  bottom: 37px;
+  height: 30px;
+  border: none;
+  background-color:  #E08B2F;
+  width: 40px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  color:aliceblue;
+  left: 110px;
+  box-shadow: 3px 3px 5px rgb(189, 189, 189);
+  cursor: pointer;
+}
+.removeButton{
+  color:aliceblue;
+  position: relative;
+  bottom: 40px;
+  height: 30px;
+  border: none;
+  background-color:  #E08B2F;
+  width: 40px;
+  left: 25px;
+
+  border-radius: 5px;
+  color:aliceblue;
+  box-shadow: 3px 3px 5px rgb(189, 189, 189);
+  cursor: pointer;
+}
+.decreaseButton{
+  color:aliceblue;
+  position: relative;
+  bottom: 37px;
+  font-size: 1.5rem;
+  height: 30px;
+  border: none;
+  background-color:  #E08B2F;
+  width: 40px;
+  left: 25px;
+  border-radius: 5px;
+  color:aliceblue;
+  box-shadow: 3px 3px 5px rgb(189, 189, 189);
+  cursor: pointer;
+}
+
+
+
+.container i:hover, .container h3:hover {
+  color: #E08B2F;
+  cursor: pointer;
+}
+.eye{
+  color: #e6e6e6;
+}
+.container img{
+  cursor: pointer;
+  transition: .3s ease-in;
+}
+.container img:hover{
+  border: #E08B2F solid 4px;
+  border-radius: 50%;
+  width: 90%;
+  box-shadow: 3px 3px 5px rgb(189, 189, 189);
+
+}
+
+.details{
+  height: 520px;
+  width: 900px;
+  background-color:  #e6e6e6;
+  position: absolute;
+  border-radius: 25px;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  box-shadow: 5px 5px 10px rgb(189, 189, 189);
+}
+.details img{
+  width: 40%;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+.detailsText{
+  margin-top: 10px;
+  color: hsl(0, 0%, 31%);
+  font-size: 1rem;
+}
+.hidden{
+  display: none;
+}
+.backButton{
+  height: 30px;
+  width: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e08a2fdd;
+  color: aliceblue;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+@media (max-width: 650px) {
+    .container {
+      height: 200px;
+      width: 130px;
+      padding: 0;
+      margin: 10px;
+    }
+  
+    .container img {
+      width: 100%;
+    }
+
+    .name {
+      font-size: 8px;
+      margin: 10px 10px 10px;
+    }
+    .cost {
+      position: relative;
+      font-size: 0.4rem;
+      margin: 2px 5px;
+      padding: 5px;
+      width: fit-content;
+      border-radius: 5px;
+      top:9.5px;
+      width:10px;
+      height: 10px;
+      box-shadow: 1px 1px 3px rgb(189, 189, 189);
+    }
+    .button{
+      height: 20px;
+      width: 70px;
+      font-size: 0.5rem;
+      left:25px;
+      bottom:15px;
+      box-shadow: 1px 2px 3px rgb(189, 189, 189);
+    }
+    .details{
+      height: 500px;
+      width: 330px;
+      background-color:  #e6e6e6;
+      border-radius: 25px;
+      display: block;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 5px 5px 10px rgb(189, 189, 189);
+    }
+    .details img{
+      width: 90%;
+      border-radius: 15px;
+    
+    }
+    .detailsText{
+      color: hsl(0, 0%, 31%);
+      font-size: 1rem;
+      border-radius: 25px;
+      display: block;
+      margin-top: 10px;
+    }
+    .backButton{
+      margin: 10px;
+      height: 30px;
+      width: 50px;
+      border: none;
+      border-radius: 5px;
+      background-color: #e08a2fdd;
+      color: aliceblue;
+      cursor: pointer;
+    }
+    .removeButton{
+      position: relative;
+      bottom: 16.5px;
+      height: 20px;
+      width: 25px;
+      left: 0px;
+      border-radius: 5px;
+      box-shadow: 3px 3px 5px rgb(189, 189, 189);
+      cursor: pointer;
+    }
+
+    .decreaseButton{
+      position: relative;
+      bottom: 15px;
+      font-size: 1rem;
+      height: 20px;
+      width: 25px;
+      left: 0px;
+      border-radius: 5px;
+      box-shadow: 3px 3px 5px rgb(189, 189, 189);
+      cursor: pointer;
+    }
+
+    .addButton{
+      position: relative;
+      bottom: 15px;
+      height: 20px;
+      width: 25px;
+      font-size: 1rem;
+      border-radius: 5px;
+      left: 55px;
+      box-shadow: 3px 3px 5px rgb(189, 189, 189);
+      cursor: pointer;
+    }
+    .trash{
+      font-size: 12px;
+    }
+  }
+  
