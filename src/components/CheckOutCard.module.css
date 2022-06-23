@@ -27,7 +27,9 @@
     margin: 5px;
 }
 
-
+.name{
+    width: 40%;
+}
 
 @media (max-width: 650px) {
     .name{
