@@ -54,6 +54,9 @@ const AboutUs = () => {
           <p>
             <span>Friday:</span> 4:00 pm - 4:00 am
           </p>
+          <p>
+          <b>Tamees restaurant </b>This restaurant sets a high standard for its food quality and ensures that guests receive the same quality with every meal. Serving quality food can earn your restaurant a good reputation and compel their guests to return for repeated visits.we provide multiple varities like traditional dishes include Maq'louba, Margooga, Harees, Machbous, Frsee'ah, Fireed, Jisheid, and  breads like raqaq, khameer, and chebab, served with cheese, date syrup, or eggs.
+          </p>
         </div>
       </div>
       <img className={styles.pattern} src={Pattern} />
