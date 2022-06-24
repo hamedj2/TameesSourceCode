@@ -15,8 +15,8 @@ const CheckOutCard = (props) => {
       <img className={styles.image} src={image} alt={name} />
       <div className={styles.name}>
         <h3>{name}</h3>
-      </div>
-      <div>
+      </div> 
+      <div className={styles.quantity}>
         <span>{quantity}</span>
       </div>
       <div>
