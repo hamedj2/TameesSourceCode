@@ -53,7 +53,7 @@ const CheckOut = () => {
 
           {!state.checkout && state.itemsCounter === 0 && (
             <div>
-              <h3>Shopping card is empty</h3>
+              <h3>Cart is empty</h3>
               <button
                 onClick={() => {
                   navigate("/Menu/Salad");
