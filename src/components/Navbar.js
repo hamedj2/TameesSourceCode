@@ -2,7 +2,8 @@ import React, { useState, useRef, useEffect, useContext } from "react";
 import styles from "./Navbar.module.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../firebase";
-import { logout } from "../firebase";
+import { NavLink } from "react-router-dom"
+
 //context
 import { CardContext } from "./Context/CardContextProvider";
 
@@ -44,14 +45,7 @@ const Navbar = () => {
   } else {
     path = "/SignIn";
   }
-  async function logoutHandler() {
-    try {
-      await logout();
-      navigate("/");
-    } catch {
-      alert("Error!");
-    }
-  }
+
   return (
     <header className={styles.header} ref={ref}>
       <div className={styles.listContainer}>
@@ -67,36 +61,36 @@ const Navbar = () => {
           <ul className={`${styles.show} ${styles.list}`}>
             <li></li>
             <li>
-              <Link className={styles.navbarLink} to="/" onClick={clickHandler}>
+              <NavLink className={({ isActive }) => (isActive ? styles.linkActive : styles.link)} to="/" onClick={clickHandler} >
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
-                className={styles.navbarLink}
+              <NavLink
+                className={({ isActive }) => (isActive ? styles.linkActive : styles.link)}
                 to={`/Menu/Salad`}
                 onClick={clickHandler}
               >
                 Menu
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
-                className={styles.navbarLink}
+              <NavLink
+                className={({ isActive }) => (isActive ? styles.linkActive : styles.link)}
                 to={path}
                 onClick={clickHandler}
               >
                 Sign In
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
-                className={styles.navbarLink}
+              <NavLink
+                className={({ isActive }) => (isActive ? styles.linkActive : styles.link)}
                 to="/AboutUs"
                 onClick={clickHandler}
               >
                 About Us
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -147,14 +141,6 @@ const Navbar = () => {
         >
           CheckOut
         </button>
-        </div>
-        <div
-        className={currentUser ? styles.signout : styles.hide}
-        onClick={() => {
-          logoutHandler();
-        }}
-      >
-        <i title = "Sign Out" className="fa-solid fa-sign-out"></i>
       </div>
     </header>
   );

@@ -24,9 +24,9 @@
     
 }
 .mainContainer{
-    padding: 6rem 0rem 0rem 0rem;
     display: flex;
     justify-content: center;
+    margin-top: 55px;
 }
 .pattern{
     position: absolute;
