@@ -94,6 +94,7 @@ const MenuCard = (props) => {
         <img src={image} alt={name} />
         <p className={isOpen ? styles.detailsText : styles.hidden}>{details}</p>
         <p className={isOpen ? styles.detailsText : styles.hidden}>calories : 560 cal</p>
+        <p className={isOpen ? styles.detailsText : styles.hidden}>Allergens : Wheat, Eggs</p>
         <button className={styles.backButton} onClick={clickHandler}>
           back
         </button>
