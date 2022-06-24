@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
+    padding-top: 80px;
 }
 .container h2{
     padding: 2rem 0rem 0rem 0rem;
