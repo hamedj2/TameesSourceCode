@@ -19,9 +19,6 @@ const CheckOutCard = (props) => {
       <div className={styles.quantity}>
         <span>{quantity}</span>
       </div>
-      <div>
-        <span>${quantity*cost}</span>
-      </div>
       <div className={styles.bottonContainer}>
         {quantity > 1 ? (
           <button
