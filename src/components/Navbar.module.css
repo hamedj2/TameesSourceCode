@@ -86,7 +86,7 @@
 }
 .checkout{
   height: 300px;
-  width: 100%;
+  width: 300px;
   background-color: #292b2f;
   position: absolute;
   z-index: -1;
