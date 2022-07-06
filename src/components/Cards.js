@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import styles from "./menu/AllMenu.module.css";
-import MenuCard from "./menu/MenuCard";
+import styles from "./Cards.module.css";
+import Card from "./Card";
 
 import db from "../firebase";
 import { collection, onSnapshot } from "firebase/firestore";
@@ -20,13 +20,11 @@ const Cards = () => {
   return (
     <div className={styles.container}>
       {specialMenu.map((menu) => (
-        <MenuCard
+        <Card
           image={menu.image}
           name={menu.name}
-          cost={`${menu.cost}`}
+          cost={`$${menu.cost}`}
           key={menu.id}
-          details={menu.details}
-          id={menu.id}
         />
       ))}
     </div>
