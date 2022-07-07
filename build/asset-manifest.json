@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2f1bde59.css",
-    "main.js": "/static/js/main.38c64814.js",
+    "main.css": "/static/css/main.65f105e7.css",
+    "main.js": "/static/js/main.05bdef26.js",
     "static/media/logo-tamees.png": "/static/media/logo-tamees.e5c08108c6bcd8fc3d4c.png",
     "static/media/Caesar Salad.jpg": "/static/media/Caesar Salad.a794d332f6374ba76a08.jpg",
     "static/media/PremiumQuality.png": "/static/media/PremiumQuality.a3845f54d2eb42eb032b.png",
@@ -12,11 +12,11 @@
     "static/media/PageNotFound.png": "/static/media/PageNotFound.635ac77611dc91e628e4.png",
     "static/media/pattern1.png": "/static/media/pattern1.393d4ed3be5e3e37ac9d.png",
     "index.html": "/index.html",
-    "main.2f1bde59.css.map": "/static/css/main.2f1bde59.css.map",
-    "main.38c64814.js.map": "/static/js/main.38c64814.js.map"
+    "main.65f105e7.css.map": "/static/css/main.65f105e7.css.map",
+    "main.05bdef26.js.map": "/static/js/main.05bdef26.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f1bde59.css",
-    "static/js/main.38c64814.js"
+    "static/css/main.65f105e7.css",
+    "static/js/main.05bdef26.js"
   ]
 }

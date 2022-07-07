@@ -41,6 +41,7 @@ const CheckOut = () => {
             <div>
               <h3>Checked out Successfully</h3>
               <button
+                className={styles.goBackToMenuButton}
                 onClick={() => {
                   navigate("/Menu/Salad");
                 }}
