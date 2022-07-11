@@ -1,4 +1,4 @@
-# VSCode
+# VSCode, ignore VScode codes
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -17,6 +17,6 @@
 *password*
 *.httr-oauth*
  
-# Private Node Modules
+# Private Node Modules, ignore node modules
 node_modules/
 creds.js
