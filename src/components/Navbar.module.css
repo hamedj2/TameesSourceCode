@@ -1,3 +1,4 @@
+/* header */
 .header{
   display: flex;
   justify-content: flex-start;
@@ -11,11 +12,12 @@
   left: 0;
   z-index: 10;
 }
-
+/* logo */
 .logoClass {
   width: 50px;
   margin: auto 0;
 }
+/* the list style */
 .list {
   display: flex;
   list-style: none;
@@ -27,24 +29,24 @@
   text-decoration: none;
   padding: 15px;
 }
-
+/* hover over links */
 .navbarLink:hover, .basket .shopping_basket:hover {
   color: #e08b2f;
 }
-
+/* when links are selected */
 .linkActive {
   color: #e08b2f;
   text-decoration: none;
   padding: 15px;
 }
-
+/* link style */
 .link {
   color: aliceblue;
   text-decoration: none;
   padding: 15px;
 }
 
-
+/* shopping basket style */
 .basket .shopping_basket {
   color: aliceblue;
 }
@@ -53,11 +55,12 @@
   margin-right: 20px;
   margin-left: auto;
 }
-
+/* Brand name title -> TAMEES */
 .tameestitle {
   display: none;
   padding-left: 2rem;
 }
+/* burger menu main container */
 .burgercontainer{
   width: 2rem;
   height: 2rem;
@@ -69,6 +72,7 @@
   
   
 }
+/* showing user name in basket (style) */
 .username{
   color: aliceblue;
   font-size: 1rem;
@@ -77,6 +81,7 @@
   right: 5rem;
   cursor: pointer;
 }
+/* the burger menu style */
 .burger{
   width: 1.4rem;
   height: 0.25rem;
@@ -84,6 +89,7 @@
   border-radius: 15px;
   cursor: pointer;
 }
+/* the checkput box style */
 .checkout{
   height: 300px;
   width: 300px;
@@ -94,6 +100,7 @@
   top:50px;
   display: block;
 }
+/* hide the checkout box */
 .hideCheckOut{
   height: 300px;
   width: 300px;
@@ -104,9 +111,11 @@
   top:50px;
   display: none;
 }
+/* a simple hide style */
 .hide{
   display: none;
 }
+/* show if the user is signed in or not */
 .userSign{
   color: aliceblue;
   position: absolute;
@@ -132,6 +141,7 @@
   top:200px;
   color: aliceblue;
 }
+/* Checkout button style */
 .checkOutButton{
   position: absolute;
   right:130px;
@@ -143,7 +153,7 @@
   width: 80px;
   border-radius: 5px;
 }
-
+/* Mobile version */
 @media (max-width: 650px) {
   .show {
     margin: 0;
